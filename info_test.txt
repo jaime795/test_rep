@@ -1,0 +1,18 @@
+NOSE2 customization options
+
+1. Change search directory: nose2 -s DIR_ADD DIR_NAME
+    DIR_NAME -> Directory in which we want to search
+    DIR_ADD -> Adress of parent directory of DIR_NAME relative to the project source directory (Use "./" if directory is in project source directory)
+    Usefull when wanting to test only one feature of your app at a time
+
+2. Running specific test cases: nose2 -s DIR_ADD DIR_NAME.TEST_FILE.TEST_CLASS.TEST_NAME
+    TEST_NAME -> Name of the Test method
+    TEST_CLASS -> class in which the test method is defined
+    TEST_FILE -> name of the test file in which the test case is defined
+    DIR_NAME -> Directory in which the file exists
+    DIR_ADD -> Address of the parent directory of DIR_NAME relative to the project source
+
+3. Running tests in a single module: Can be also run by calling the function nose2.main()
+
+
+
