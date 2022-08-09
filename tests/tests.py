@@ -1,3 +1,7 @@
+#To run the tests with nose2 you should execute nose2 command in the project source directory (prueba_git)
+#It takes all python files starting with "test"
+#Nose2 will look in all the directories which are python packages, name starting with "test" or named "src"/"lib"
+
 #pip install unittest2
 import unittest
 import sys, os, inspect
