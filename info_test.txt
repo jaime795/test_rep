@@ -27,3 +27,20 @@ PYTEST
     c. Marking: In order to run a specific set of tests. The mark must be put on the test we want to run, example in test_file1.py
     d. Parallel Processing: pip install pytest-xdist. To execute tests faster, for example: "py.test -n 4"
 
+UNITTEST
+
+    1. Test Fixture: Baseline for running tests to ensure that there is a fixed environment in which tests are run so that results are repeatable
+    2. Test Case: Set of conditions which is used to determine whether a system under test works correctly
+    3. Test Suite: Collection of testcases that are used to test a software program to show what it has some specified set of behaviours by executing the aggregated tests together
+    4. Test Runner: Component which set up the execution of tests and provides the outcome to the user
+
+    Possible Outcomes:
+        1. OK: Tests are passed
+        2. FAIL: Test did not pass. An AssertionError exception is raised
+        3. ERROR: Test raises an exception other than AssertionError
+    
+    Terms:
+        1. assertEqual(): Check if the result is equal to the expected result
+        2. assertTrue()/assertFalse(): Verify if statement is true or false
+        3. assertRaises(): Raise a specific exception. Ex: self.assertRaises(TypeError)
+
