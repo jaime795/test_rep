@@ -14,5 +14,16 @@ NOSE2 customization options
 
 3. Running tests in a single module: Can be also run by calling the function nose2.main()
 
+PYTEST
 
+1. pip install pytest
+2. Called using py.test command in project source
+3. Looks for files in all locations inside the project directory
+4. Files starting with "test_" or ending with "_test" are considered test files
+5. Pytest customization options
+    a. Running specific files: py.test <filename>
+    b. Substring matching: py.test -k "method_name"
+        For example if we want to test "area()" of class "Square" method we would run py.test -k "area" and pytest woudl only execute the tests with "area" in their name
+    c. Marking: In order to run a specific set of tests. The mark must be put on the test we want to run, example in test_file1.py
+    d. Parallel Processing: pip install pytest-xdist. To execute tests faster, for example: "py.test -n 4"
 
